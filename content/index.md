@@ -1,25 +1,32 @@
 ---
-title: "Min fina titel"
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
+title: "Om Mig"
 ---
-Min me-sida i kursen design
+Om Mig - Kurs: Design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+__Detta innehåll är skrivet i markdown.__
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+Hej. Jag heter Oskar Dans och är distansstudent på kursen Design, BTH.
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Jag tycker om programmering. Men även spel, böcker, filmer och allt möjligt.
+Bor i Stockholm, och det är ganska fint här, om inte en bit kallt för mitt tycke.
+Bott I ett flertal olika länder i uppväxten, så min engelska är nog ett snäpp
+bättre en svenskan, men inga problem med de två språken hur som helst.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Att läsa hade jag nog rekommenderat Kingslayer serien, men den verkar som om den aldrig
+avslutas. Istället kanske en audible prenumeration och lyssna på något under en
+lång promenad. Alternativt, som jag alltid rekommenderats men ännu inte läst, så
+är Dune serien troligen väldigt bra.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Aja, Det var allt från mig. Tack för att du stannade förbi och ses snart igen.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+![Intro-bild, Tärning](image/mood_dice.png "Tärning")

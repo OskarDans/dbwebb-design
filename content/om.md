@@ -4,7 +4,7 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-kursrepo
 
@@ -12,17 +12,17 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-redovisa
 ---
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+__Detta innehåll är skrivet i markdown__
 
-Skriv några kloka ord om kursen?
+Jag är mer intresserad i programmering än design, men ska bli intressant att
+se vad kursen har att lära ut. Mycket av det som vi redan här i början har lärt
+oss är ju koncept man har sett, men inte helt förstått sig på ännu.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/abstract_color.jpg?w=300 caption="Kanske tänka lite på hur vi använder färg?"]

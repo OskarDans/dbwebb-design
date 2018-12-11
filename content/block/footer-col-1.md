@@ -1,3 +1,3 @@
-#### Footer col 1
+#### Om Guldfiskar
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Visste du att guldfiskar faktiskt inte har ett så dåligt minne som det sägs?

@@ -1,3 +1,3 @@
-#### Footer col 2
+#### Om Elefanter
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Men en elefant har nog ett otumordentligt minne.
