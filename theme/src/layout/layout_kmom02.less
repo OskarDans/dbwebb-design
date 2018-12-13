@@ -1,0 +1,174 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+@subColorOne: #FFB77C;
+@subColorTwo: #CD639F;
+@brightRedColor: #FFCACA;
+
+
+
+/**
+ * General layout
+ */
+ .inner-wrap {
+     max-width: 1100px;
+     margin: 0 auto;
+ }
+
+.outer-wrap-main {
+  padding-bottom: 15px;
+}
+
+ .rm-default a {
+     display:block;
+ }
+
+/**
+Main/Sidebars/Columns
+*/
+
+.inner-wrap-main {
+    .clearfix();
+}
+
+.region-sidebar-right,
+.region-sidebar-left {
+    float:left;
+    width:30%;
+}
+
+.region-main {
+    width:100%;
+    float:left;
+    overflow:auto;
+
+    &.has-sidebar {
+        width:70%;
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        width:50%;
+    }
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    float:left;
+    width:25%;
+}
+
+
+ /** NAV */
+
+ .rm-navbar {
+     font-weight: bolder;
+     align-content: center;
+     color: black;
+     text-align: center;
+ }
+
+ .rm-navbar a {
+     color: black;
+     list-style: none;
+     font-size: 20px;
+     padding-left: 2em;
+     font-weight:bolder;
+ }
+
+ .rm-navbar li {
+     list-style: none;
+     display: inline-block;
+ }
+
+ /** BYLINE */
+
+ .byline-content > img {
+     float:left;
+     margin-right:15px;
+ }
+
+ .byline-content > p {
+     max-width:700px;
+ }
+
+ .byline-content {
+     min-height:80px;
+ }
+
+
+/** HEADER
+*/
+
+.outer-wrap-flash {
+    background-color: @subColorOne;
+}
+
+.outer-wrap-header {
+     background-color: @subColorOne;
+     width:100%;
+     .clearfix();
+}
+
+.inner-wrap-header {
+    max-width:100%;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    width: 20%;
+    float: left;
+}
+
+.region-header-col-2 {
+    width: 60%;
+    float: left;
+}
+
+.site-logo-text-icon {
+    display:none;
+}
+
+.site-logo-text {
+    font-size: 48px;
+}
+
+.site-logo-text a {
+    text-decoration:none;
+    color:black;
+}
+
+.site-logo img {
+    height: 64px;
+}
+
+ /** SITE FOOTER */
+ .outer-wrap-footer {
+     padding-top: 15px;
+     padding-bottom: 15px;
+ }
+
+.footer-column {
+    min-height: 125px;
+    background-color: @subColorTwo;
+}
+
+ .outer-wrap-footer {
+     width: 100%;
+     background-color: @subColorTwo;
+     overflow:auto;
+ }
+
+.footer-column {
+    width:33%;
+    float:left;
+}
+
+.site-footer > ul > li {
+    list-style:none;
+}
