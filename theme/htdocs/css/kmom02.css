@@ -4634,7 +4634,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a:hover {
   color: inherit;
-  background-color: inherit;
+  background-color: #ffde7c;
+}
+.rm-desktop li:hover {
+  background-color: #ffde7c;
 }
 .rm-desktop li:hover > ul {
   left: 0;
@@ -4656,7 +4659,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: #fff;
 }
 .rm-mobile a {
-  color: inherit;
+  color: black;
 }
 .rm-mobile li {
   display: block;
@@ -4705,15 +4708,18 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   z-index: 998;
   top: 0;
   transform: translateX(100%);
-  width: 500px;
-  max-width: 500px;
+  width: 250px;
+  max-width: 250px;
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #131313;
+  background-color: #ffde7c;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
+}
+.rm-max .rm-mobile li {
+  width: 200px;
 }
 .rm-max .rm-mobile li a:active {
   background-color: transparent;
@@ -4727,8 +4733,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max .rm-mobile .rm-submenu-button {
   float: right;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  background-color: #444;
-  padding: 8px 24px;
+  background-color: #FFB77C;
+  padding: 8px 8px;
   margin-right: 8px;
   margin-top: 10px;
   border-radius: 5px;
@@ -4740,10 +4746,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max .rm-mobile .rm-submenu-button:hover {
   text-decoration: none;
-  background-color: #ccc;
-}
-.rm-max .rm-mobile li ul {
-  padding-left: 8px;
+  background-color: #ffde7c;
 }
 .rm-max .rm-mobile .rm-submenu-open > .rm-submenu-button:after {
   content: "\25B2";
@@ -4760,6 +4763,19 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
   * Example on media queries
   */
+@media screen and (max-width: 680px) {
+  .rm-small {
+    display: block;
+  }
+  .rm-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 680px) {
+  .rm-max {
+    display: none;
+  }
+}
 /**
  * Internal self contained modules, save in directory module/.
  */
@@ -4769,14 +4785,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * This stylesheet is for the design course and kmom01. Fill it with style
  * to style up the website so it is useable.
  */
-/* Hide submenu, leave this to kmom02 */
-.rm-desktop ul {
-  display: none;
-}
-/* Hide responsive/mobile menu, leave this to kmom02 */
-.rm-navbar-max {
-  display: none;
-}
 /**
  * Style for the stylechooser.
  */
@@ -4827,7 +4835,7 @@ img {
 .outer-wrap-main {
   padding-bottom: 15px;
 }
-.rm-default a {
+.rm-max a {
   display: block;
 }
 /**
@@ -4863,15 +4871,17 @@ Main/Sidebars/Columns
 .rm-navbar {
   font-weight: bolder;
   align-content: center;
+  font-size: 20px;
   color: black;
-  text-align: center;
 }
-.rm-navbar a {
+.rm- .rm-navbar a {
   color: black;
   list-style: none;
-  font-size: 20px;
-  padding-left: 2em;
   font-weight: bolder;
+}
+.rm-desktop {
+  padding-left: 2em;
+  text-align: center;
 }
 .rm-navbar li {
   list-style: none;

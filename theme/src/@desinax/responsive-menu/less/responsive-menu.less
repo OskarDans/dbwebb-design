@@ -7,7 +7,7 @@
 @navbarItemBgColor:         inherit; //#444;
 @navbarItemColor:           inherit;
 @navbarItemHoverColor:      inherit; //lighten(@navbarItemColor, 20%);
-@navbarItemHoverBgColor:    inherit; //#666;
+@navbarItemHoverBgColor:    #ffde7c; //#666;
 
 // Menu item current/selected
 @navbarItemSelectedColor:       inherit;
@@ -45,12 +45,12 @@
 @mobileColor:       #fff;
 
 // Max menu
-@maxBgColor:                #131313;
+@maxBgColor:                #ffde7c;
 @maxMenuItemClickedBgColor: transparent; //@navbarMenuButtonClickedColor;
 @maxButtonColor:            inherit;
 @maxButtonClickedColor:     @navbarMenuButtonClickedColor;
-@maxButtonSubmenuBgColor:    #444;
-@maxButtonSubmenuHoverBgColor: #ccc;
+@maxButtonSubmenuBgColor:    #FFB77C;
+@maxButtonSubmenuHoverBgColor: #ffde7c;
 
 /**
  * Outer wrapper for menu
@@ -232,8 +232,8 @@ a.rm-button {
 
         // Hover over a menu item and display submenu
         &:hover {
-            //color: @navbarItemHoverColor;
-            //background-color: @navbarItemHoverBgColor;
+            // color: @navbarItemHoverColor;
+            background-color: @navbarItemHoverBgColor;
 
             // To display submenu(s)
             > ul {
@@ -266,7 +266,7 @@ a.rm-button {
     color: @mobileColor;
 
     a {
-        color: inherit;
+        color: black;
     }
 
     li {
@@ -350,13 +350,16 @@ a.rm-button {
         z-index: 998;
         top: 0;
         transform: translateX(100%);
-        width: 500px;
-        max-width: 500px;
+        width: 250px;
+        max-width: 250px;
         height: 500px;
         overflow-y: auto;
         padding-top: 72px;
         background-color: @maxBgColor;
 
+        li {
+            width: 200px;
+        }
 
         /* Color when menu item is clicked */
         li a:active {
@@ -376,7 +379,7 @@ a.rm-button {
             float: right;
             box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
             background-color: @maxButtonSubmenuBgColor;
-            padding: 8px 24px;
+            padding: 8px 8px;
             margin-right: 8px;
             margin-top: 10px;
             border-radius: 5px;
@@ -398,7 +401,7 @@ a.rm-button {
 
         /* Style for submenu */
         li ul {
-            padding-left: 8px;
+            // padding-left: 8px;
         }
 
         // Header of submenu is opened
