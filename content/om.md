@@ -25,4 +25,4 @@ Jag är mer intresserad i programmering än design, men ska bli intressant att
 se vad kursen har att lära ut. Mycket av det som vi redan här i början har lärt
 oss är ju koncept man har sett, men inte helt förstått sig på ännu.
 
-[FIGURE src=image/abstract_color.jpg?w=300 caption="Kanske tänka lite på hur vi använder färg?"]
+[FIGURE src=image/abstract_color.jpg?h=240 caption="Kanske tänka lite på hur vi använder färg?"]
