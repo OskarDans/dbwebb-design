@@ -1,0 +1,75 @@
+/** DESIGN SHEET KMOM03 **/
+ /**
+
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+/** Import mixin */
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/kmom01.less";
+@import "module/stylechooser.less";  // Just an example module
+
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@import "base/04_dark_base.less";
+
+/** Typographic grid import */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/** Vertical grid import */
+@import "@desinax/vertical-grid/less/grid.less";
+
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+// @import "layout/layout.less";
+@import "layout/layout_kmom04.less";
+@import "layout/responsive.less";
+@import "layout/regions.less";     // To add style for ?regions
+
+/** Typography */
+
+@fontFamilyHeadings: @fontFamilyTimesNewRoman;
+@fontFamilyBody: @fontFamilyVerdana;
+@fontFamilyCode: @fontFamilyArial;
+
+@colorH4BorderBottom: #251e1e;
+
+// Magic number and base fontsize
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+@bgColorMain: #FFF0F0;
+@navBarColor: #AC3E3B;
+@footerColor: #600604;
+
+@footerTextColor: white;
+
+/**
+ * My own settings, not currently in their own module.
+ */

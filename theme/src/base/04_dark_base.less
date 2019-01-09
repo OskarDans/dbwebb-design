@@ -1,0 +1,59 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorMain: #AC3E3B;
+@colorBody: #ffe9e9;
+@colorBorders: #9C4D4D;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorMain;
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorMain;
+    // font: 100.01%/1 @fontFamilyBody;
+}
+
+//adjusts for dark mode
+
+img {
+    max-width: 100%;
+}
+
+p {
+    color: @colorBody;
+}
+
+
+//url adjusts for dark
+
+body a {
+    color: #417bb0;
+}
+
+body a:active{
+    color: #203c55;
+}
+
+//submenu adjust for dark theme
+
+.rm-mobile > li > a,
+.rm-mobile > li > ul > li > a {
+    color: white;
+}
+
+.rm-button-face-1 {
+    color: white;
+}
+
+//Activates grid and typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+
+//http://paletton.com/#uid=1010u0kkXlA1UVdbnvbuwc1Uf2e

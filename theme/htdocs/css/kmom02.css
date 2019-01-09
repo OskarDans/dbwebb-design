@@ -4590,6 +4590,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-default li {
   display: inline-block;
 }
+.rm-default li:hover {
+  color: inherit;
+  background-color: #F6ADA9;
+}
 .rm-default li li {
   display: block;
   min-width: 10em;
@@ -4634,10 +4638,10 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-desktop li a:hover {
   color: inherit;
-  background-color: #ffde7c;
+  background-color: #F6ADA9;
 }
 .rm-desktop li:hover {
-  background-color: #ffde7c;
+  background-color: #F6ADA9;
 }
 .rm-desktop li:hover > ul {
   left: 0;
@@ -4664,21 +4668,29 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-mobile li {
   display: block;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  /*        // Header of submenu is closed
-        //&.sub-menu, // For WordPress menu generating
-        &.rm-submenu > a:before {
-            content: "\f0d7";
-        }
-
-        // Header of submenu is opened
-        &.rm-submenu-open > a:before {
-            content: "\f0d8";
-        }
-*/
+}
+.rm-mobile li a:before {
+  float: right;
+  font-family: FontAwesome;
+  content: "\f0da";
+}
+.rm-mobile li.sub-menu,
+.rm-mobile li.rm-submenu > a:before {
+  content: "\f0d7";
+}
+.rm-mobile li.rm-submenu-open > a:before {
+  content: "\f0d8";
 }
 .rm-mobile li.rm-submenu-open > ul {
   position: relative;
   left: 0;
+}
+.rm-mobile li li {
+  border: none;
+  border-top: 1px solid #eee;
+}
+.rm-mobile li:hover {
+  border-color: #9FB129;
 }
 /**
  * Menu layout for the max variant, for mobile screens and complete menues.
@@ -4713,7 +4725,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   height: 500px;
   overflow-y: auto;
   padding-top: 72px;
-  background-color: #ffde7c;
+  background-color: #A1413C;
   /* Color when menu item is clicked */
   /* Button for submenu */
   /* Style for submenu */
@@ -4733,7 +4745,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max .rm-mobile .rm-submenu-button {
   float: right;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  background-color: #FFB77C;
+  background-color: #A1413C;
   padding: 8px 8px;
   margin-right: 8px;
   margin-top: 10px;
@@ -4746,7 +4758,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .rm-max .rm-mobile .rm-submenu-button:hover {
   text-decoration: none;
-  background-color: #ffde7c;
+  background-color: #F6ADA9;
 }
 .rm-max .rm-mobile .rm-submenu-open > .rm-submenu-button:after {
   content: "\25B2";

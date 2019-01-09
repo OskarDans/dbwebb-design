@@ -1,0 +1,38 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorMain: #5D0002;
+@colorBody: #FD8E91;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorMain;
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorMain;
+    // font: 100.01%/1 @fontFamilyBody;
+}
+
+img {
+    max-width: 100%;
+}
+
+body a {
+    color: #B0E248;
+}
+
+body a:visited{
+    color: #659401;
+}
+
+//Activates grid and typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+
+//http://paletton.com/#uid=1010u0kkXlA1UVdbnvbuwc1Uf2e

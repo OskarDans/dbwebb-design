@@ -2,12 +2,17 @@
  * Style for responsive menu
  */
 
+@menuColor: #A1413C;
+@menuColorSmall: #A1413C;
+@menuColorHover: #F6ADA9;
+@menuColorHoverSmall: #F6ADA9;
+
 // General
-//@navbarAccentColor:         #9FB129;
+@navbarAccentColor:         #9FB129;
 @navbarItemBgColor:         inherit; //#444;
 @navbarItemColor:           inherit;
 @navbarItemHoverColor:      inherit; //lighten(@navbarItemColor, 20%);
-@navbarItemHoverBgColor:    #ffde7c; //#666;
+@navbarItemHoverBgColor:    @menuColorHover; //#666;
 
 // Menu item current/selected
 @navbarItemSelectedColor:       inherit;
@@ -15,9 +20,9 @@
 //@navbarItemSelectedBorderColor: darken(lime, 10%);
 
 // Mobile button
-//@navbarMobileItemBorderColor:           #eee;
-//@navbarMobileItemHoverBorderColor:      @navbarAccentColor;
-//@navbarMobileBorderColor:               #ddd;
+@navbarMobileItemBorderColor:           #eee;
+@navbarMobileItemHoverBorderColor:      @navbarAccentColor;
+@navbarMobileBorderColor:               #ddd;
 
 // The menu button
 @navbarMenuButtonColor:         inherit;
@@ -45,12 +50,12 @@
 @mobileColor:       #fff;
 
 // Max menu
-@maxBgColor:                #ffde7c;
+@maxBgColor:                @menuColor;
 @maxMenuItemClickedBgColor: transparent; //@navbarMenuButtonClickedColor;
 @maxButtonColor:            inherit;
 @maxButtonClickedColor:     @navbarMenuButtonClickedColor;
-@maxButtonSubmenuBgColor:    #FFB77C;
-@maxButtonSubmenuHoverBgColor: #ffde7c;
+@maxButtonSubmenuBgColor:    @menuColor;
+@maxButtonSubmenuHoverBgColor: @menuColorHover;
 
 /**
  * Outer wrapper for menu
@@ -138,8 +143,8 @@ a.rm-button {
 
         // Hover over a menu item
         &:hover {
-            //color: @navbarItemHoverColor;
-            //background-color: @navbarItemHoverBgColor;
+            color: @navbarItemHoverColor;
+            background-color: @navbarItemHoverBgColor;
         }
 
         // Menu item for submenu
@@ -275,22 +280,22 @@ a.rm-button {
 
         // All items of the menu
         a:before {
-            //float: right;
-            //font-family: FontAwesome;
-            //content: "\f0da";
+            float: right;
+            font-family: FontAwesome;
+            content: "\f0da";
         }
 
-/*        // Header of submenu is closed
-        //&.sub-menu, // For WordPress menu generating
+        // Header of submenu is closed
+        &.sub-menu, // For WordPress menu generating
         &.rm-submenu > a:before {
             content: "\f0d7";
         }
 
-        // Header of submenu is opened
+        //Header of submenu is opened
         &.rm-submenu-open > a:before {
             content: "\f0d8";
         }
-*/
+
         // Display the submenu
         &.rm-submenu-open > ul {
             position: relative;
@@ -299,13 +304,13 @@ a.rm-button {
 
         // Menu item for submenu
         li {
-            //border: none;
-            //border-top: 1px solid @submenuItemBorderColor;
+            border: none;
+            border-top: 1px solid @submenuItemBorderColor;
         }
 
         // Hover over a menu item
         &:hover {
-            //border-color: @navbarMobileItemHoverBorderColor;
+            border-color: @navbarMobileItemHoverBorderColor;
         }
     }
 }
