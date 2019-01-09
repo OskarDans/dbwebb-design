@@ -1,11 +1,11 @@
-# Webbsidors Färgschema
+Webbsidors Färgschema
 =======================
 
 Uppgiften handlar om att studera samt analysera färgkompositionen av 3 olika webbsidor.
 Syftet är att använda färgteori för att studera vilken förväntad effekt som sidan
 försöker uppnå, samt orsak bakom dess färgval.
 
-## Urval
+Urval
 -----------------------
 
 Jag valde sidorna utifrån två kriterier, det ska alla 3 ha liknande ämnesområde,
@@ -28,7 +28,7 @@ på att sälja maskineri. Sidan använder sig även mycket mer av text och mer s
 
 Alla tre sidorna har ganska unika färgval gentemot varandra, som framkommer i resultatarbetet.
 
-## Metod
+Metod
 -----------------------
 
 Planen är att skapa ett enkelt färgschema utav de primära färgerna och eventuellt komplementerande färger. Därav
@@ -40,7 +40,7 @@ Jag kommer använda mig av mozilla's toolbox för att identifiera val av typogra
 
 Syftet är att därifrån kunna visa och förklara hur färg och typografi använts på sidan.
 
-## Resultat
+Resultat
 -----------------------
 
 Dokumentera dina resultat från din studie. Berätta vad du kom fram till, vilka resultat du hittade och observerade.
@@ -241,13 +241,13 @@ man besöker medans lantmännen är inriktade på att sprida information, och vi
 Intressant att notera för mig är att alla sidorna har en färgdesign som motsvarar företagets logga nästan identiskt. En öppen text med
 grön symbol för lantmännen. En stark gul med blå text för NewHolland. Caterpillar med en svart text och gul som accent däri.
 
-## Referenser
+Referenser
 -----------------------
 
 Beaird, Jason. The Principles of Beautiful Web Design. 2nd ed., Canada, Collingwood Sitepoint, Nov. 2010, https://www.sitepoint.com/principles-beautiful-web-design/. Accessed 29 Dec. 2018.
 
 
-## Övrigt
+Övrigt
 -----------------------
 Rapport Av:
 
