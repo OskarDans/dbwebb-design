@@ -63,5 +63,19 @@ return [
             "url" => "verktyg",
             "title" => "Verktyg och möjligheter för utveckling.",
         ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Bloggtext för bilder.",
+            "submenu" => [
+                "items" => [
+                    [
+                        "text" => "001_Bild",
+                        "url" => "blogg/mitt-forsta-inlagg",
+                        "title" => "Bloginlägg 1",
+                    ]
+                ],
+            ],
+        ],
     ],
 ];
